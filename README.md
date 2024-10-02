@@ -2,7 +2,7 @@
 
 ChatGPT clone built with Python and Flask.
 
-[selfgpt.png]
+![SelfGPT Screenshot](selfgpt.png)
 
 ## Quick Start
 
