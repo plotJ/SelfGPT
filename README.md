@@ -2,6 +2,8 @@
 
 ChatGPT clone built with Python and Flask.
 
+[selfgpt.png]
+
 ## Quick Start
 
 1. Clone and enter directory:
