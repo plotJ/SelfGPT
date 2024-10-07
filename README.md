@@ -1,8 +1,8 @@
 # SelfGPT
 
-ChatGPT clone built with Python and Flask.
+A ChatGPT clone built with Python and Flask, now supporting both OpenAI and Anthropic Claude models.
 
-![SelfGPT Screenshot](selfgpt.png)
+![SelfGPT Screenshot](selfgpt2.png)
 
 ## Quick Start
 
@@ -24,8 +24,8 @@ ChatGPT clone built with Python and Flask.
    ```
 
 4. Configure:
-   - Set `OPENAI_API_KEY` in environment or `config.json`
-   - Optional: Set `OPENAI_API_BASE` for custom API endpoint
+   - Set `OPENAI_API_KEY` and `CLAUDE_API_KEY` in environment or `config.json`
+   - Optional: Set `OPENAI_API_BASE` for custom OpenAI API endpoint
 
 5. Run:
    ```
@@ -42,6 +42,7 @@ docker-compose up
 ## Features
 
 - ChatGPT-like interface
+- Support for OpenAI and Anthropic Claude models
 - Theme changer
 - User preference memory
 - Conversation deletion with confirmation
@@ -53,3 +54,20 @@ docker-compose up
 - File loading
 - Performance optimizations
 
+## Future Enhancements
+
+1. User authentication and conversation storage:
+   - Implement login functionality
+   - Store conversations linked to user accounts instead of using cookies
+
+2. Additional AI models:
+   - Integrate Google's Gemini model
+
+3. User-provided API keys:
+   - Allow users to input their own API keys during signup
+   - Securely store and manage user-specific API keys
+
+4. Image generation:
+   - Implement AI-powered image generation capabilities
+
+---
