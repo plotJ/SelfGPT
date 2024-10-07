@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
-        <meta name="description" content="A conversational AI system that listens, learns, and challenges">
-        <meta property="og:title" content="ChatGPT">
+        <meta name="description" content="A conversational AI system using ChatGPT and Claude models">
+        <meta property="og:title" content="AI Chat (GPT & Claude)">
         <meta property="og:image" content="https://openai.com/content/images/2022/11/ChatGPT.jpg">
-        <meta property="og:description" content="A conversational AI system that listens, learns, and challenges">
+        <meta property="og:description" content="A conversational AI system using ChatGPT and Claude models">
         <meta property="og:url" content="https://chat.acy.dev">
         <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
@@ -58,7 +58,7 @@
         <script src="/assets/js/highlight.min.js"></script>
         <script src="/assets/js/highlightjs-copy.min.js"></script>
         <script>window.conversation_id = `{{chat_id}}`</script>
-        <title>ChatGPT</title>
+        <title>AI Chat (OpenAI + Claude)</title>
     </head>
     <body>
         <div class="gradient"></div>
@@ -78,8 +78,8 @@
                     </button>
                     <div class="info">
                         <i class="fa-regular fa-circle-info"></i>
-                        <span class="convo-title">Made by Josh<br>
-                            For David<br>
+                        <span class="convo-title"><br>
+                        <br>
                         </span>
                     </div>
                 </div>
@@ -114,7 +114,10 @@
                             <option value="gpt-3.5-turbo-0301">gpt-3.5-turbo-0301</option>
                             <option value="gpt-4-0314">gpt-4-0314</option>
                             <option value="gpt-4-turbo">gpt-4-turbo</option>
-                            <option value="gpt-4o" selected>gpt-4o</option>
+                            <option value="gpt-4o">gpt-4o</option>
+                            <option value="claude-3-sonnet-20240229">Claude 3.5 Sonnet</option>
+                            <option value="claude-3-haiku-20240307">Claude 3.5 Haiku</option>
+                            <option value="claude-3-opus-20240229">Claude 3.5 Opus</option>
                         </select>
                         <!-- <span class="about">Model</span> -->
                     </div>

@@ -10,6 +10,7 @@ const box_conversations = document.querySelector(`.top`);
 const spinner = box_conversations.querySelector(".spinner");
 const stop_generating = document.querySelector(`.stop_generating`);
 const send_button = document.querySelector(`#send-button`);
+const modelSelect = document.getElementById('model-select');
 let prompt_lock = false;
 
 hljs.addPlugin(new CopyButtonPlugin());
@@ -565,3 +566,16 @@ colorThemes.forEach((themeOption) => {
 });
 
 document.onload = setTheme();
+
+const claudeModels = [
+  {value: 'claude-3.5-sonnet', text: 'Claude 3.5 Sonnet'},
+  {value: 'claude-3.5-haiku', text: 'Claude 3.5 Haiku'},
+  {value: 'claude-3.5-opus', text: 'Claude 3.5 Opus'}
+];
+
+claudeModels.forEach(model => {
+  const option = document.createElement('option');
+  option.value = model.value;
+  option.textContent = model.text;
+  modelSelect.appendChild(option);
+});

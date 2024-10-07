@@ -12,6 +12,9 @@ class Config:
         self.openai_api_base = os.getenv("OPENAI_API_BASE") or config_data.get('openai_api_base')
         self.proxy = config_data.get('proxy', {})
 
+        self.claude_key = os.getenv("CLAUDE_API_KEY")
+        self.claude_api_base = os.getenv("CLAUDE_API_BASE", "https://api.anthropic.com")
+
         # Overwrite with environment variables if set
         self.host = os.getenv('HOST') or self.site_config.get('host', '0.0.0.0')
         self.port = int(os.getenv('PORT') or self.site_config.get('port', 1338))
@@ -26,6 +29,10 @@ models = {
     'text-gpt-0040-render-sha-0314': 'gpt-4-0314',
     'text-gpt-0040-render-sha-turbo': 'gpt-4-turbo',
     'text-gpt-4o-render-sha-0': 'gpt-4o',
+    'claude-3.5-sonnet': 'claude-3-sonnet-20240229',
+    'claude-3.5-haiku': 'claude-3-haiku-20240307',
+    'claude-3.5-opus': 'claude-3-opus-20240229',
+
 }
 
 special_instructions = {
